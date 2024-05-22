@@ -11,7 +11,7 @@ function Home() {
         <h2>Siema, Jestem Emkacz!</h2>
         <p>Naciśnij przycisk "Portfolio", aby zobaczyć moją pracę, lub przycisk "O Mnie", aby dowiedzieć się więcej</p>
         <Link to="/portfolio" className="portfolio-button">PORTFOLIO</Link>
-        <Link to="/about" className="portfolio-button">O Mnie</Link>
+        <Link to="/O_mnie" className="portfolio-button">O Mnie</Link>
       </div>
     </div>
   );

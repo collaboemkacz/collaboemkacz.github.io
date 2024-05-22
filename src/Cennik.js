@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Cennik.css';
 import Header from './Header';
@@ -15,6 +15,10 @@ function Cennik() {
   const [delivery, setDelivery] = useState(3);
   const [price, setPrice] = useState(100);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    calculatePrice();
+  }, [photos, editing, delivery]);
 
   const calculatePrice = () => {
     if (photos < 1) {
@@ -99,7 +103,6 @@ function Cennik() {
               <option value={3}>do 3 dni</option>
             </select>
           </div>
-          <button onClick={calculatePrice}>Oszacuj cenę</button>
           <h4>Przybliżona cena: {price} PLN</h4>
           <button onClick={() => handleContinue(null)}>Kontynuuj z Planem Dostosowanym</button>
         </div>

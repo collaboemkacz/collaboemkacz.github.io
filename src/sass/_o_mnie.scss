@@ -1,0 +1,24 @@
+// O_mnie.scss
+
+@import 'abstract'; // Assuming _abstract.scss has been created
+
+.O_mnie {
+  text-align: center;
+  font-family: $font-stack;
+}
+
+.o-mnie-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}

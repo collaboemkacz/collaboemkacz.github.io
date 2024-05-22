@@ -8,7 +8,7 @@ function Kontakt() {
     <div className="Kontakt">
       <Header />
       <div className="Kontakt-content">
-      <h2>Skontaktuj się ze mną za pomocą formulaża poniżej</h2>
+      <h2>Skontaktuj się ze mną za pomocą formularza poniżej</h2>
       <p>Lub naciśnij przycisk poniżej aby zobaczyć cennik</p>
       <Link to="/cennik" className="nigga-button">Cennik</Link>
         <form className="contact-form">
