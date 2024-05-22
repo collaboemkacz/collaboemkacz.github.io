@@ -29,13 +29,13 @@
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
-  height: 300px; /* Set a fixed height */
+  height: 300px; 
   background-size: cover;
   background-position: center;
 }
 
 .photo img {
-  display: none; /* Hide the actual image element */
+  display: none; 
 }
 
 .photo .overlay {
